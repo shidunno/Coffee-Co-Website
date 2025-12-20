@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #F8F4F0;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+nav img {
+    margin-left: 3.5%;
+    height: 90px;
+    width: auto;
+}
+
+nav a {
+    color: #2A2B2A;
+    text-decoration: none;
+}
+
+nav div {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+nav div button {
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    padding: 0px 5px;
+}
+
+#signinBtn {
+    background-color: #E8C39E;
+    border: none;
+    color: #2A2B2A;
+    font-weight: bold;
+}
+
+#signinBtn:hover {
+    background-color: #d9b48a;
+}
+
+#joinnowBtn {
+    background-color: #2A2B2A;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#joinnowBtn:hover {
+    background-color: #3A3B3A;
+}
+
+#hero {
+    height: clamp(20rem, 40vw, 100rem);
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    background-color: #2A2B2A;
+}
+
+#background {
+    object-fit: cover;
+    height: 120%;
+    width: 120%;
+    margin: -5%;
+    filter: blur(20px);
+    opacity: 0.2;
+}
+
+footer {
+    display: flex;
+    background-color: #2A2B2A;
+    padding: 2% 10% 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    height: 15vh;
+}
+
+footer ul li {
+    margin-top: 3%;
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.6rem, 1vw, 5rem);
+}
+
+#icons {
+    display: flex;
+    gap: 0.4vw;
+}
+
+ion-icon {
+    font-size: clamp(1rem, 3.5vw, 2rem);
+    color: white;
+}
+
+footer div {
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    position: absolute;
+    height: 90%;
+    width: 60%;
+    top: 30px;
+    margin-left: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header div h1 {
+    font-size: clamp(2.3rem, 4vw, 5rem);
+    color: #F5F5F5; 
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    z-index: 2;
+}
+
+header div h2 {
+    font-size: clamp(1rem, 1.5vw, 10rem);
+    margin-top: 1%;
+    color: #BEBFC5;
+}
+
+#coffeeProduct {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    height: clamp(18rem, 35vw, 100rem);
+    width: auto;
+    margin-left: auto;
+    z-index: 1;
+}
+
+#highlights {
+    height: clamp(27rem, 25vw, 100vw);
+    padding: 3% 0% 5% 0%;
+    text-align: center;
+}
+
+#highlights h1 {
+    font-size: clamp(2.7rem, 4vw, 10rem);
+}
+
+form {
+    height: clamp(30rem, 30vw, 100rem);
+    padding: 3%;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 12px 24px -2px, 
+                rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+}
+
+#form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    color: gray;
+    display: block;
+    font-size: clamp(1rem, 1vw, 10rem);
+    margin-bottom: 1%;
+    width: clamp(280px, 74vw, 400px);
+    text-align: left;
+}
+
+form input {
+    width: min(100%, 400px);
+    height: 52px;
+    padding: 0 20px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    font-size: 16px;
+    transition: all 0.25s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+form h1 {
+    text-align: center;
+    font-size: clamp(1.8rem, 3.3vw, 4rem);
+}
+
+form p {
+    color: #848482;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+form button {
+    width: min(100%, 400px);
+    height: 56px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: inherit;
+    background: linear-gradient(135deg, #6F4E37 0%, #8B5E3C 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    margin-top: 24px;
+    padding: 0 32px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.2);
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #8B5E3C 0%, #9C6F46 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(111, 78, 55, 0.3);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(111, 78, 55, 0.2);
+}
+
+form button:focus {
+    outline: none;
+    box-shadow: 
+        0 0 0 3px rgba(111, 78, 55, 0.3),
+        0 4px 12px rgba(111, 78, 55, 0.2);
+}
+
+form button:disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+#checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: #6F4E37;
+    margin: 0;
+}
+
+#checkbox-container {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 10px;
+    width: clamp(280px, 74vw, 400px);
+}
+#checkbox-container p {
+    margin: 0;
+}
+
+#checkbox-container a {
+    text-decoration: none;
+    color: #6F4E37;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 2vw;
+    margin-top: 3vh;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    background-color: #3A3B3A;
+    border-radius: 25px;
+    height: 45vh;
+    width: 45vh;
+    overflow: hidden;
+}
+
+.card p {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    color: white;
+    z-index: 1;
+    font-size: 2.6vh;
+}
+
+.card img {
+    height: 100%;
+    width: auto;
+    opacity: 0.6;
+}
+
+.group {
+    display: flex;
+    gap: 2vw;
+    animation: spin 80s infinite linear;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%}
+}
+
+@media (max-width: 500px) {
+    footer img {
+        display: none;
+    }
+
+    #coffeeProduct {
+        height: clamp(15rem, 20vw, 100rem);
+    }
+
+    form {
+        box-shadow: none;
+    }
+
+    #icons {
+        flex-direction: column;
+    }
+}
+
+
+
+
