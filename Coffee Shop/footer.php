@@ -12,7 +12,7 @@
 </head>
 <body>
     <footer>
-        <img src = "images/coffee.png">
+        <img src = "images/coffee.png" draggable="false">
         <ul>
             <li><a href = "#">Privacy Policy</a></li>
             <li><a href = "#">Our Products</a></li>
