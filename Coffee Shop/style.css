@@ -90,21 +90,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
-
-footer img {
-    height: 15vh;
+    width: 100%;
 }
 
 footer ul li {
-    margin-top: 3%;
+    margin-top: 6px;
     list-style: none;
 }
 
 footer ul li a {
     text-decoration: none;
     color: white;
-    font-size: clamp(0.6rem, 1vw, 5rem);
+    font-size: clamp(0.6rem, 0.8vw, 5rem);
 }
 
 #icons {
@@ -158,8 +155,8 @@ header div h2 {
 }
 
 #highlights {
-    height: clamp(27rem, 25vw, 100vw);
-    padding: 6vw 0% 5% 0%;
+    height: 50%;
+    padding: 4vw 0% 5% 0%;
     text-align: center;
 }
 
@@ -319,8 +316,8 @@ form button:disabled {
     position: relative;
     background-color: #3A3B3A;
     border-radius: 25px;
-    height: 45vh;
-    width: 45vh;
+    height: 40vh;
+    width: 40vh;
     overflow: hidden;
 }
 
@@ -397,6 +394,22 @@ form button:disabled {
 
 #side-menu-container button:hover {
     background-color: #EFE7DF;
+}
+
+footer {
+    margin: 0;
+    width: 100%;
+    padding: 2% 10%; 
+    border-top: 1px solid #2A2B2A; 
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-sizing: border-box;
+}
+
+footer img {
+    display: block;
+    height: auto;
+    max-height: 100px; 
 }
 
 #main-menu-container {
